@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MainMenuComponent } from './components/main-menu/main-menu.component';
+import { LevelOneComponent } from './components/level-one/level-one.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: MainMenuComponent },
+  { path: 'level-one', component: LevelOneComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
