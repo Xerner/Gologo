@@ -1,0 +1,50 @@
+<div class="w-100 bg-secondary rounded p-3 mb-3 mt-3">
+  <div>
+    <h3 class="text-light">Score</h3>
+    <div class="row rounded bg-light p-2 mx-0">
+      <div class="col-6">
+        <span>Enemies</span>
+      </div>
+      <div class="col-6">
+        <span>{{ enemyCount - score.enemiesKilled }}</span>
+      </div>
+      <div class="col-6">
+        <span>Shots</span>
+      </div>
+      <div class="col-6">
+        <span>{{ score.shotsFired }}</span>
+      </div>
+      <div class="col-6">
+        <span>Accuracy</span>
+      </div>
+      <div class="col-6">
+        <span>{{ score.accuracy() | percent }}</span>
+      </div>
+    </div>
+    <div class="text-light mt-3">Destroy all enemies to submit your score</div>
+  </div>
+
+  <div *ngIf="score.enemiesKilled == enemyCount">
+    <hr class="text-light" style="margin-left: -16px; margin-right: -16px" />
+
+    <div class="mt-3">
+      <div class="mb-3">
+        <input
+          type="text"
+          placeholder="Enter your name"
+          class="form-control"
+          [(ngModel)]="score.name"
+        />
+      </div>
+
+      <button class="btn btn-primary" (click)="postPlayerScore()">
+        Submit Score
+      </button>
+
+      <div *ngIf="loadMessage.length > 0">
+        <div class="text-warning mt-2">{{ loadMessage }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <button routerLink="/" routerLinkActive="active" class="btn btn-primary" style="width: 300px">Menu</button> -->

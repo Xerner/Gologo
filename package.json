@@ -1,6 +1,6 @@
 {
   "scripts": {
     "ng": "ng",
-    "start": "cd ClientApp && ng serve"
+    "start": "cd GologoClient && ng serve"
   }
 }

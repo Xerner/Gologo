@@ -4,14 +4,15 @@
   "configurations": [
     {
       "name": "ng serve",
-      "type": "msedge",
+      "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
-      "url": "http://[::1]:4200/"
+      "url": "http://[::1]:4200/",
+      "webRoot": "${workspaceFolder}/GologoClient"
     },
     {
       "name": "ng test",
-      "type": "msedge",
+      "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: test",
       "url": "http://[::1]:9876/debug.html"

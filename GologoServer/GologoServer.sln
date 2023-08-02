@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GologoServer", "GologoServer.csproj", "{64D4DC91-A2A8-45D7-B465-9ABFECB53B40}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GologoClient", "..\GologoClient\", "{34CAD3E2-37E4-4945-A092-157F13EEAD99}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53301"
+		Debug.AspNetCompiler.PhysicalPath = "..\GologoClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53301\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53301"
+		Release.AspNetCompiler.PhysicalPath = "..\GologoClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53301\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53301"
+		SlnRelativePath = "..\GologoClient\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64D4DC91-A2A8-45D7-B465-9ABFECB53B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D4DC91-A2A8-45D7-B465-9ABFECB53B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D4DC91-A2A8-45D7-B465-9ABFECB53B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D4DC91-A2A8-45D7-B465-9ABFECB53B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34CAD3E2-37E4-4945-A092-157F13EEAD99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CAD3E2-37E4-4945-A092-157F13EEAD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34CAD3E2-37E4-4945-A092-157F13EEAD99}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{34CAD3E2-37E4-4945-A092-157F13EEAD99}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70C614FD-A8FA-46E1-9BF3-78BF721C014C}
+	EndGlobalSection
+EndGlobal
